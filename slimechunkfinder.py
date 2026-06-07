@@ -9,7 +9,8 @@ except:
 try:
     import numpy as np
     load = True
-    np.warnings.simplefilter("ignore", RuntimeWarning)
+	import warnings
+	warnings.simplefilter("ignore", RuntimeWarning)
 except ImportError or ModuleNotFoundError:
     print('numpy not supported')
 if load:
